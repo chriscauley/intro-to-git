@@ -3,12 +3,15 @@ intro-to-git
 
 gitintro
 
-PHP SUCKS SO BAD!!!!
+PHP FOREVER!!!!
 
-PHP STANDS FOR BAD AT ACRONYM!!!!
+PHP STANDS FOR SO BAD ASS IT DOESN'T HAVE TIME TO DEAL WITH ANAGRAMS!!!!
 
 pyawn not so much.
 
 tom was here
 
 But not before me.
+
+
+chris <<< ((((EVIL EYE))))

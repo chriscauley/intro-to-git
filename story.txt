@@ -1,0 +1,12 @@
+The cat sneezed and the robot said beep beep
+
+good night sweet prince and good morning to you
+
+This is another new line!
+
+accidentally pulling is super fun 
+
+what am i reading? Who knows? I won't tell!!
+
+def foo():
+    print hello world

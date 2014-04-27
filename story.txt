@@ -1,1 +1,10 @@
 The cat sneezed and the robot said beep beep
+
+hello and good night
+
+class is fun
+
+what am i typing 
+
+def foo():
+    print hello world

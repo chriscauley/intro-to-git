@@ -3,8 +3,7 @@ intro-to-git
 
 gitintro
 
-
-PHP ROCKS!!!!
+Everyone be nice.
 
 pyawn not so much.
 

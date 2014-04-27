@@ -2,9 +2,9 @@ The cat sneezed and the robot said beep beep
 
 hello and good night
 
-class is fun
+class is super fun 
 
-what am i typing 
+what am i reading?
 
 def foo():
     print hello world

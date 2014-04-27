@@ -10,5 +10,6 @@ Fernando: "I love TeamBest and I will never change my mind!"
 
 Carrie: "Don't you see? I want to join TeamSingle! We're through, Fernando!"
 
+Fernando: "It would never work out..."
 --FIN--
 

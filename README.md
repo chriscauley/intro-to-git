@@ -3,7 +3,9 @@ intro-to-git
 
 gitintro
 
-PHP ROCKS!!!!
+PHP SUCKS SO BAD!!!!
+
+PHP STANDS FOR BAD AT ACRONYM!!!!
 
 pyawn not so much.
 

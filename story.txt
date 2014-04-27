@@ -1,10 +1,12 @@
 The cat sneezed and the robot said beep beep
 
-hello and good night
+hello and good night and good morning to you
+
+This is another new line!
 
 class is super fun 
 
-what am i reading?
+what am i reading? Who knows? I won't tell!!
 
 def foo():
     print hello world

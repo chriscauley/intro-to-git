@@ -1,0 +1,16 @@
+#temp files, etc.
+*.pyc
+*.py~
+*~
+\.\#*
+\#*
+.DS_Store
+
+#site generated content
+.media/*
+.static/*
+
+#virtual environments
+.environ/*
+src/*
+

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=1024, user-scalable=no">
+
+  <title>Intro to JS: Game Development</title>
+
+  <!-- Required stylesheet -->
+  <link rel="stylesheet" media="screen" href="slide_resources/core/deck.core.css">
+
+  <!-- Extension CSS files go here. Remove or add as needed. -->
+  <link rel="stylesheet" media="screen" href="slide_resources/extensions/goto/deck.goto.css">
+  <link rel="stylesheet" media="screen" href="slide_resources/extensions/menu/deck.menu.css">
+  <link rel="stylesheet" media="screen" href="slide_resources/extensions/navigation/deck.navigation.css">
+  <link rel="stylesheet" media="screen" href="slide_resources/extensions/status/deck.status.css">
+  <link rel="stylesheet" media="screen" href="slide_resources/extensions/scale/deck.scale.css">
+
+  <!-- Style theme. More available in /themes/style/ or create your own. -->
+  <link rel="stylesheet" media="screen" href="slide_resources/themes/style/swiss.css">
+
+  <!-- Transition theme. More available in /themes/transition/ or create your own. -->
+  <link rel="stylesheet" media="screen" href="slide_resources/themes/transition/horizontal-slide.css">
+
+  <!-- Basic black and white print styles -->
+  <link rel="stylesheet" media="print" href="slide_resources/core/print.css">
+
+  <!-- Required Modernizr file -->
+  <script src="slide_resources/modernizr.custom.js"></script>
+  <script src="slide_resources/jquery.min.js"></script>
+  <script>
+    var WRITE_WAITING = 0;
+    function write(url) {
+      var _id = url.replace(/\./g,"").replace("/","");
+      window.WRITE_WAITING++;
+      $.get(
+        url,
+        function(data) {
+          $("#"+_id).text(data);
+          window.WRITE_WAITING--;
+          if (window.WRITE_WAITING == 0) { hljs.initHighlighting(); }
+        },
+        "text"
+      )
+    }
+  </script>
+<style>pre { width: 100%; }</style>
+</head>
+<body>
+  <div class="deck-container">
+
+    <!-- Begin slides. Just make elements with a class of slide. -->
+
+    <section class="slide">
+      <h2>Intro to Git</h2>
+      <h3>What we learn</h3>
+      <ul>
+        <li>Why we need version control</li>
+        <li>How git solves this problem</li>
+        <li>Basic git work flow</li>
+        <li>The commands of git</li>
+        <li>Create github accounts</li>
+        <li>Open workshop</li>
+        <li>Advanced concepts</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>Intro to Git</h2>
+      <h3>Why we need version control</h3>
+      <ul>
+        <li>People overwrite each others changes</li>
+        <li>Humans are bad at tracking file changes, computers are flawless</li>
+        <li>Version control lets you step back in time and see history</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>Intro to Git</h2>
+      <h3>How git solves this problem</h3>
+      <ul>
+        <li>Store final versions of files in one place (repository)</li>
+        <li>Track files locally, watch changes</li>
+        <li>Force local merge before pushing</li>
+        <li>This is only really useful for plain text (code, svg, documents)</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>Intro to Git</h2>
+      <h3>Git work flow</h3>
+      <ol>
+        <li><b>pull</b> changes from remote storage</li>
+        <li>make changes to file</li>
+        <li>review changes before</li>
+        <li><b>push</b> changes to remote storage</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>Intro to Git</h2>
+      <h3>Main git commands</h3>
+      <ul>
+        <li><b>git pull</b> (get commits from remote)</li>
+        <li><b>git status</b> (list modified files)</li>
+        <li><b>git diff [FILENAME]</b> (Show differences between .git and files</li>
+        <li><b>git add FILE1 [FILE2 FILE3 ...]</b> (add non-tracked files)</li>
+        <li><b>git commit -m"message!"</b> (commit staged changes to .git)</li>
+        <li><b>git commit -am"message!"</b> (commit all changes to .git)</li>
+        <li><b>git push</b> (push committed changes to remote)</li>
+        <hr/>
+        <li><b>git stash</b> (store changes temporarily)</li>
+        <li><b>git checkout FILENAME</b> (undo changes since last commit</li>
+        <li><b>git checkout -b BRANCHNAME</b> (create branch and switch to it)</li>
+        <li><b>git checkout BRANCHNAME</b> (switch to branch)</li>
+        <li><b>git branch</b> (list all local branches)</li>
+        <li><b>git merge BRANCHNAME</b> (merge all changes of BRANCHNAME into current branch)</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>Intro to Git</h2>
+      <h3>Advanced Concepts</h3>
+      <ul>
+        <li>Branches - store different change sets in "branches" of code</li>
+        <li>Hooks - Code that executes whenever you push/pull/checkout/whatever</li>
+        <li>.gitignore - list of patterns for files to ignore</li>
+        <li>git log and github.com's history viewer</li>
+      </ul>
+    </section>
+
+    <!-- End slides. -->
+
+    <!-- Begin extension snippets. Add or remove as needed. -->
+
+    <!-- deck.navigation snippet -->
+    <div aria-role="navigation">
+      <a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
+      <a href="#" class="deck-next-link" title="Next">&#8594;</a>
+    </div>
+
+    <!-- deck.status snippet -->
+    <p class="deck-status" aria-role="status">
+      <span class="deck-status-current"></span>
+      /
+      <span class="deck-status-total"></span>
+    </p>
+
+    <!-- deck.goto snippet -->
+    <form action="." method="get" class="goto-form">
+      <label for="goto-slide">Go to slide:</label>
+      <input type="text" name="slidenum" id="goto-slide" list="goto-datalist">
+      <datalist id="goto-datalist"></datalist>
+      <input type="submit" value="Go">
+    </form>
+
+    <!-- End extension snippets. -->
+  </div>
+
+<!-- Required JS files. -->
+<script src="slide_resources/core/deck.core.js"></script>
+
+<!-- Extension JS files. Add or remove as needed. -->
+<script src="slide_resources/extensions/menu/deck.menu.js"></script>
+<script src="slide_resources/extensions/goto/deck.goto.js"></script>
+<script src="slide_resources/extensions/status/deck.status.js"></script>
+<script src="slide_resources/extensions/navigation/deck.navigation.js"></script>
+<script src="slide_resources/extensions/scale/deck.scale.js"></script>
+
+<!-- Initialize the deck. You can put this in an external file if desired. -->
+<script>
+  $(function() {
+    $.deck('.slide');
+  });
+</script>
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/highlight.min.js"></script>
+</body>
+</html>

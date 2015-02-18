@@ -1,3 +1,3 @@
 $read = "Hello World!"
 
-Host-Write $read -ForegroundColor Green
+Write-Host $read -ForegroundColor Green
